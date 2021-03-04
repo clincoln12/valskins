@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_22_164244) do
+ActiveRecord::Schema.define(version: 2021_02_06_171735) do
 
   create_table "collections", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_01_22_164244) do
     t.integer "collection_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image_url"
     t.index ["collection_id"], name: "index_skins_on_collection_id"
   end
 
