@@ -1,10 +1,16 @@
 class Skin {
-  constructor(name, points, imageUrl) {
-    this.name = name;
-    this.points = points;
-    this.imageUrl = imageUrl;
+  constructor(skinObject) {
+    console.log('skinobject:', skinObject)
+    this.skinObject = skinObject
   }
 
-  renderSkin() {
+  html() {
+    return `
+    <div>
+      ${this.skinObject.name}
+      ${this.skinObject.points}
+      ${this.skinObject.image_url}
+    </div>
+    `
   }
 }

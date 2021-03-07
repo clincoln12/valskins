@@ -3,7 +3,7 @@ class SkinsController < ApplicationController
 
   # GET /skins
   def index
-    @skins = Skin.all
+    @skins = Skin.where(collection_id: params[:collection_id])
 
     render json: @skins
   end
