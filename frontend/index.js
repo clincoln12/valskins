@@ -1,12 +1,12 @@
 const BASE_URL = "http://127.0.0.1:3000";
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch(`${BASE_URL}/collections/1/skins`)
-    .then((response) => response.json())
-    .then((skinsJson) => {
-      renderSkins(skinsJson)
-    })
+  initialRender()
 })
+
+const initialRender = () => {
+  const carl = new Collections();
+}
 
 const renderSkins = (skins) => {
   const targetDiv = document.getElementById('collections-container')

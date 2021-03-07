@@ -70,3 +70,4 @@ Skin.create(name: 'BlastX Knife', points: 4350, image_url: 'https://cx.valorbuff
 Skin.create(name: 'BlastX Odin', points: 2175, image_url: 'https://cx.valorbuff.com/blob/BRcfB9CUan3qiX3XlVDXlIs2iNlJBtcZhtcS51h0l2bq5aU7i1cOKtp0itcGva0E?w=900', collection_id: 8)
 Skin.create(name: 'BlastX Phantom', points: 2175, image_url: 'https://cx.valorbuff.com/blob/BRcfB9CUanC7KVQJh+h7h6sYKNl3Btcb5+cS51Usl2s7K+UslahZK1c0lNcGva0E?w=900', collection_id: 8)
 Skin.create(name: 'BlastX Spectre', points: 2175, image_url: 'https://cx.valorbuff.com/blob/BRcfB9CUanCbl+p051U0iIsVl+U2BtxX51JSht3JK6bNK1JYitK0K+p0itcGva0E?w=900', collection_id: 8)
+
