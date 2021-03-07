@@ -18,16 +18,24 @@ class Collections {
 
     targetDiv.innerHTML = ''
 
-    targetDiv.innerHTML += `<select>`
+    let dropdownHtml = ''
+
+    dropdownHtml += `<select id="collections-dropdown" onChange="collectionsDropdownHandler()">`
 
     collections.forEach((collection) => {
-      targetDiv.innerHTML += `
-      <option value="${collection.name}">${collection.name}</option>
+      dropdownHtml += `
+      <option value="${collection.id}">${collection.name}</option>
       `
     })
 
-    targetDiv.innerHTML += `</select>`
+    dropdownHtml += `</select>`
+
+    targetDiv.innerHTML = dropdownHtml
   }
+}
+
+const collectionsDropdownHandler = () => {
+  const selected = document.getElementById('collections-dropdown').value
 }
 
 class Collection {
