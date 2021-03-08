@@ -32,7 +32,10 @@ class Collections {
 
     targetDiv.innerHTML = dropdownHtml
 
-    targetDiv.innerHTML += '<div id="collection-container"></div>'
+    targetDiv.innerHTML += '<div id="collection-container" style="display: grid; grid-template-columns: 240px 240px 240px;"></div>'
+
+    collectionsDropdownHandler() 
+    // run this after dropdown is initialized once to load default selected
   }
 }
 
