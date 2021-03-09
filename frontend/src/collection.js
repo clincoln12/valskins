@@ -20,7 +20,13 @@ class Collections {
 
     let dropdownHtml = ''
 
-    dropdownHtml += `<select id="collections-dropdown" onChange="collectionsDropdownHandler()">`
+    dropdownHtml += `<select id="collections-dropdown" style="
+      margin: auto;
+      display: block;
+      position: relative;
+      top: 175px;
+      left: 300px;
+    " onChange="collectionsDropdownHandler()">`
 
     collections.forEach((collection) => {
       dropdownHtml += `
@@ -32,7 +38,7 @@ class Collections {
 
     targetDiv.innerHTML = dropdownHtml
 
-    targetDiv.innerHTML += '<div id="collection-container" style="display: grid; grid-template-columns: 240px 240px 240px;"></div>'
+    targetDiv.innerHTML += '<div id="collection-container" style="display: grid; grid-template-columns: 300px 300px 300px; justify-content: center; padding: 200px;"></div>'
 
     collectionsDropdownHandler() 
     // run this after dropdown is initialized once to load default selected

@@ -28,11 +28,11 @@ class Skin {
       </div>
 
       <div>
-        ${this.skinObject.points}
+        ${this.skinObject.points} <img src="https://img.icons8.com/ios/452/valorant.png" width="10px"/>
       </div>
 
       <div>
-        <button onClick="deleteSkin(${this.skinObject.id}, ${this.skinObject.collection_id})">Delete</button>
+        <button style="color: red; " onClick="deleteSkin(${this.skinObject.id}, ${this.skinObject.collection_id})">&times;</button>
       </div>
     </div>
     `
