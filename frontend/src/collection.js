@@ -42,6 +42,8 @@ class Collections {
 
     collectionsDropdownHandler() 
     // run this after dropdown is initialized once to load default selected
+
+    dynamicHeader()
   }
 }
 
@@ -49,6 +51,13 @@ const collectionsDropdownHandler = () => {
   const selected = document.getElementById('collections-dropdown').value
 
   new Collection(selected);
+}
+
+const dynamicHeader = () => {
+  document.getElementById('collections-dropdown').onclick = function() {
+    let collectionName = document.getElementById('collections-dropdown').selectedOptions[0].innerHTML
+    document.getElementById("header").innerHTML = collectionName + ' Collection';
+  }
 }
 
 class Collection {
@@ -81,4 +90,5 @@ class Collection {
 
     targetDiv.innerHTML = skinsHtml
   }
+
 }

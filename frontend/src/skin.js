@@ -14,11 +14,13 @@ class Skin {
       justify-content: center;
       align-items: center;
       color: white;
-      margin: 0 0.25em 0.25em 0;
+      margin: 0 0.25em 0.75em 0.50em;
       border-radius: 8px;
       font-family: 'Lato', 'Helvetica', Ariel, sans-serif;
       padding: 1em 0.5em;
+      position: relative;
       ">
+
       <div style="width: 100px; margin: 0 auto; padding: 0.5em 1em;">
         <img src="${this.skinObject.image_url}" width="100%"/>
       </div>
@@ -31,8 +33,8 @@ class Skin {
         ${this.skinObject.points} <img src="https://img.icons8.com/ios/452/valorant.png" width="10px"/>
       </div>
 
-      <div>
-        <button style="color: red; " onClick="deleteSkin(${this.skinObject.id}, ${this.skinObject.collection_id})">&times;</button>
+      <div style="position: absolute; top: 10px; right: 14px;">
+        <span style="color: red; cursor: pointer;" onClick="deleteSkin(${this.skinObject.id}, ${this.skinObject.collection_id})">&times;</button>
       </div>
     </div>
     `
